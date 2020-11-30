@@ -7,7 +7,7 @@
     "dev": "nodemon --inspect src/index",
     "test": "echo TODO && exit 1",
     "build": "./node_modules/.bin/babel src --out-dir dist",
-    "start": "npm run build && pm2-runtime dist"
+    "start": "npm run build && node dist"
   },
   "author": "",
   "license": "ISC",
@@ -264,5 +264,8 @@
       "complexity": 1,
       "consistent-return": 1
     }
+  },
+  "engines": {
+    "node": "10.x"
   }
 }

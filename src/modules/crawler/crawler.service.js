@@ -10,7 +10,7 @@ const fetchAnchorsWithPageInfo = ({ url }) => new Promise((resolve, reject) => {
 	
 	return scapAnchorTags(url)
 		.then(tags => {
-			console.log("===len",tags.length)
+			
 			
 			return Promise.map(tags, (linkObj) => {
 				return getPageInfo(linkObj)
