@@ -16,6 +16,25 @@ Request Body
  "url" : "https://example.com"
 }
 
+Response Body
+================
+
+Info captured for target urls is from header info sent from server
+
+{
+    "message": "Success",
+    "data": [
+        {
+            "link": "https://github.com/winhtaikaung/react-tiny-link/blob/master/README.md#start-of-content",
+            "text": "Skip to content",
+            "isUrlRelative": "Yes",
+            "contentEncoding": "chunked",
+            "serverInfo": "GitHub.com",
+            "contentLenght": 0
+        }
+      ]
+]      
+
 To run server locally
 =====================
 npm run dev
