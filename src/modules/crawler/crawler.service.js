@@ -33,7 +33,7 @@ const fetchAnchorsWithPageInfo = ({ url }) => new Promise((resolve, reject) => {
 
 const scapAnchorTags = async url => {
 
-	const browser = await puppeteer.launch()
+	const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
 	const page = await browser.newPage()
 
 	await page.goto(url,{waitUntil: 'load', timeout: 0})
