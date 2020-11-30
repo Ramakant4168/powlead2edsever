@@ -11,9 +11,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-   
-  },
+  "devDependencies": {},
   "dependencies": {
     "@babel/cli": "7.6.4",
     "@babel/runtime": "^7.7.0",

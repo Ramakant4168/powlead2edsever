@@ -3,9 +3,9 @@ import express from 'express'
 import configureRoutes from './routes-config'
 import cors from 'cors'
 
-const {
-	port = 3000
-} = process.env
+// const {
+// 	port = 3000
+// } = process.env
 
 
 const app = express()
@@ -25,6 +25,7 @@ app.use((err, req, res, next) => {
 	res.send('Something Went Wrong')
 })
 
+const port = process.env.PORT || 3000
 
 app.listen(port, () => {
 	console.log(`listening on port ${port}`)
